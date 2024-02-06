@@ -4,12 +4,77 @@
 }
 
 .navbar {
-    padding: 15px;
-    width: 100vw;
+    padding-top: 20px; 
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 100% - 20px;
     height: 63px;
     font-size: 14px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     background-color: #4A252C;
+}
+
+.book-list {
+    padding: 20px;
+}
+
+.view--flex-info {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.view--block {
+    background-color: #B4B8BD;
+    margin-bottom: 20px;
+    padding: 10px;
+    min-height: 175px;
+}
+
+.view--title-image {
+   min-height: 112px; 
+
+}
+.link--view {
+  text-decoration: none;
+}
+.search-field {
+  height: 50px;
+  position: absolute;
+  width: 100vw;
+  background-color: #4A252C;
+}
+
+.search-field input {
+  width: 70%;
+  background-color: #4A252C;
+  padding: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.view--title-image img {
+  border: 2px #000 solid;
+}
+
+.view--title-image h1 {
+   font-size: 28px; 
+   letter-spacing: .5px;
+   color: #000;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+  fill: #fff;
 }
