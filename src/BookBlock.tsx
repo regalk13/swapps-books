@@ -5,10 +5,15 @@ export default function BookBlock() {
 
     return (
         <>
-          <Link to="/destination-page" className="link--view">
+          <Link to="/bookdetails" className="link--view">
                 <div className="view--block">        
                     <div className="view--title-image">
                         <img className="view--image" src="https://covers.openlibrary.org/b/id/9255566-L.jpg" />
+                        <h1>The Lord of the Rings</h1>
+                    </div>
+
+                    <div className="view--title-image-desktop">
+                        <img className="view--image-desktop" src="https://covers.openlibrary.org/b/id/9255566-L.jpg" />
                         <h1>The Lord of the Rings</h1>
                     </div>
                     <div className="view--flex-info">

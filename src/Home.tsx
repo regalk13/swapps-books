@@ -13,6 +13,9 @@ function Home() {
             <BookBlock />
             <BookBlock />
             <BookBlock />
+            <BookBlock />
+            <BookBlock />
+            <BookBlock />
         </section>
     </>
   )
