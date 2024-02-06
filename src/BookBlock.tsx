@@ -1,26 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-export default function BookBlock(props: any) {
-    let data = props.data;
-    console.log(data);
-    let imageURL = `https://covers.openlibrary.org/b/id/${data.cover_i}-L.jpg`;
-    if (data.cover_i == undefined) imageURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png" 
+export default function BookBlock({ data }: { data: any }) {
+    const imageURL = data.cover_i
+        ? `https://covers.openlibrary.org/b/id/${data.cover_i}-L.jpg`
+        : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png";
+
     const regex = /works\/([A-Za-z0-9]+)$/;
     const match = String(data.key).match(regex);
     console.log(match);
-    const dataLink = `/bookdetails?q=${match ? match[1] : "null"}`; 
+    const dataLink = match ? `/bookdetails?q=${match[1]}` : "/bookdetails?q=null";
     return (
         <>
           <Link to={dataLink} className="link--view">
                 <div className="view--block">        
                     <div className="view--title-image">
-                        <img className="view--image" src={imageURL} />
+                        <img className="view--image" src={imageURL} loading="lazy"/>
                         <h1>{data.title}</h1>
                     </div>
 
                     <div className="view--title-image-desktop">
-                        <img className="view--image-desktop" src={imageURL} />
+                        <img className="view--image-desktop" src={imageURL} loading="lazy" />
                         <h1>{data.title}</h1>
                     </div>
                     <div className="view--flex-info">

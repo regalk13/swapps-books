@@ -44,7 +44,7 @@ export default function NavBar() {
             onChange={handleInputChange}
             onKeyPress={handleKeyPress}
           />
-          <button onClick={handleSearch}>Search</button>
+          <button className="search-button" onClick={handleSearch}>Search</button>
         </div>
       )}
         </>
