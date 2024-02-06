@@ -1,29 +1,36 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-export default function BookBlock() {
-
+export default function BookBlock(props: any) {
+    let data = props.data;
+    console.log(data);
+    let imageURL = `https://covers.openlibrary.org/b/id/${data.cover_i}-L.jpg`;
+    if (data.cover_i == undefined) imageURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png" 
+    const regex = /works\/([A-Za-z0-9]+)$/;
+    const match = String(data.key).match(regex);
+    console.log(match);
+    const dataLink = `/bookdetails?q=${match ? match[1] : "null"}`; 
     return (
         <>
-          <Link to="/bookdetails" className="link--view">
+          <Link to={dataLink} className="link--view">
                 <div className="view--block">        
                     <div className="view--title-image">
-                        <img className="view--image" src="https://covers.openlibrary.org/b/id/9255566-L.jpg" />
-                        <h1>The Lord of the Rings</h1>
+                        <img className="view--image" src={imageURL} />
+                        <h1>{data.title}</h1>
                     </div>
 
                     <div className="view--title-image-desktop">
-                        <img className="view--image-desktop" src="https://covers.openlibrary.org/b/id/9255566-L.jpg" />
-                        <h1>The Lord of the Rings</h1>
+                        <img className="view--image-desktop" src={imageURL} />
+                        <h1>{data.title}</h1>
                     </div>
                     <div className="view--flex-info">
                         <div>
-                            <p>Year: 1954</p>
-                            <p>Pages: 1193</p>
+                            <p>Year: {data.first_publish_year ? data.first_publish_year : "No data years" }</p>
+                            <p>Pages: {data.number_of_pages_median ? data.number_of_pages_median : "No data pages"}</p>
                         </div>
                         <div>
-                            <p>Rate: 4.5</p>
-                            <p>Author: J.R.R. Tolkien</p>
+                            <p>Rate: {data.ratings_average ? (data.ratings_average).toFixed(1) : "No rate"}</p>
+                            <p>Author: {data.author_name ? data.author_name : "No data name"}</p>
                         </div>
                     </div>
                 </div>

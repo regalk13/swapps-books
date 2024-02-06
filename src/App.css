@@ -41,8 +41,8 @@
 
 .view--title-image {
    min-height: 112px; 
-
 }
+
 .link--view {
   text-decoration: none;
 }
@@ -66,6 +66,7 @@
 
 .view--title-image img {
   border: 2px #000 solid;
+  width: 320px;
 }
 
 .view--title-image h1 {
@@ -173,7 +174,7 @@
   .view--title-image-desktop {
         display: block;
         position: relative;
-        min-height: 140px;
+        min-height: 400px;
         overflow: hidden; 
         min-width: 100%;
         display: flex;
