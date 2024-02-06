@@ -16,7 +16,7 @@ export default function NavBar() {
         // Perform search functionality here
         toggleSearch();
         navigate(`/?q=${searchValue}`);
-
+        window.location.reload();
     };
     const handleKeyPress = (e) => {
         if (e.key === 'Enter') {
@@ -30,9 +30,9 @@ export default function NavBar() {
         <>
             <div className="navbar">
 
-                <Link to="/" className="link">
+                <a href="/" className="link">
                     <h1>SWAPPS BOOKS</h1>
-                </Link>
+                </a>
                 <SearchIcon className="search-icon" onClick={toggleSearch} />
             </div>
                {isSearchVisible && (
