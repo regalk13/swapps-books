@@ -12,5 +12,5 @@ export default defineConfig({
     }),
   ],
   assetsInclude: ["**/*.JPG"],
-  base: "./",
+  base: "/swapps-books/",
 })
