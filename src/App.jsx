@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
-      <Router>
+      <Router basename={"https://regalk13.github.io/swapps-books/"}>
         <div>
           <Routes>
             <Route exact path="/" element={<Home />} />
