@@ -28,7 +28,7 @@ export default function NavBar() {
   return (
     <>
       <div className="navbar">
-        <a href="/" className="link">
+        <a href="/swapps-books/" className="link">
           <h1>SWAPPS BOOKS</h1>
         </a>
         <SearchIcon className="search-icon" onClick={toggleSearch} />
