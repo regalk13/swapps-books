@@ -4,7 +4,7 @@
 }
 
 .navbar {
-    padding-top: 20px; 
+    padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
     width: 100vw - 20px;
@@ -14,13 +14,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #4A252C;
+    background-color: #4a252c;
 }
 
 .book-list {
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);     
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .view--flex-info {
@@ -33,63 +33,63 @@
 }
 
 .view--block {
-    background-color: #B4B8BD;
+    background-color: #b4b8bd;
     margin-bottom: 20px;
     padding: 10px;
     min-height: 175px;
 }
 
 .view--title-image {
-   min-height: 112px; 
+    min-height: 112px;
 }
 
 .link--view {
-  text-decoration: none;
+    text-decoration: none;
 }
 .search-field {
-  height: 50px;
-  position: absolute;
-  width: 100vw;
-  background-color: #4A252C;
-  z-index: 50;
+    height: 50px;
+    position: absolute;
+    width: 100vw;
+    background-color: #4a252c;
+    z-index: 50;
 }
 
 .search-field input {
-  width: 70%;
-  background-color: #4A252C;
-  padding: 8px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  color: #fff;
+    width: 70%;
+    background-color: #4a252c;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
 }
 
 .view--title-image img {
-  border: 2px #000 solid;
-  width: 320px;
+    border: 2px #000 solid;
+    width: 320px;
 }
 
 .view--title-image h1 {
-   font-size: 28px; 
-   letter-spacing: .5px;
-   color: #000;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    color: #000;
 }
 
 .search-icon {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  margin-right: 20px;
-  fill: #fff;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+    fill: #fff;
 }
 
 .details-image--title {
     position: relative;
     height: 148px;
-    overflow: hidden; 
+    overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .details--image {
@@ -100,9 +100,9 @@
     top: 0;
     left: 0;
     height: auto;
-    object-fit: cover; 
-    object-position: 0 0; 
-    filter: brightness(70%); 
+    object-fit: cover;
+    object-position: 0 0;
+    filter: brightness(70%);
 }
 
 .details--text {
@@ -117,7 +117,7 @@
 .details--text-p {
     font-size: 16px;
     text-align: justify;
-    color: #CBCBCB;
+    color: #cbcbcb;
     margin-top: 5px;
 }
 
@@ -138,8 +138,8 @@
     padding: 10px;
     margin: 5px;
     color: #fff;
-    background-color: #4A252C;
-    transition-duration: .2s;
+    background-color: #4a252c;
+    transition-duration: 0.2s;
 }
 
 .details-button:hover {
@@ -153,9 +153,8 @@
 .view--title-image {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
 }
-
 
 .details-image--title--desktop {
     display: none;
@@ -167,38 +166,38 @@
     font-size: 15px;
     color: #fff;
     font-weight: bold;
-    background-color: #4A252C;
+    background-color: #4a252c;
     cursor: pointer;
 }
 
 @media screen and (min-width: 767px) {
-  .book-list {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
-    grid-gap: 10px; 
-  }
+    .book-list {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+        grid-gap: 10px;
+    }
 
-  .view--title-image {
-    display: none;
-  }
-  
-  .view--title-image-desktop {
+    .view--title-image {
+        display: none;
+    }
+
+    .view--title-image-desktop {
         display: block;
         position: relative;
         min-height: 400px;
-        overflow: hidden; 
+        overflow: hidden;
         min-width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center
-  }
+        align-items: center;
+    }
 
-  .view--title-image-desktop img {
+    .view--title-image-desktop img {
         position: absolute;
-        filter: brightness(70%); 
+        filter: brightness(70%);
         min-width: 100%;
         z-index: 0;
-        object-fit: cover; 
-        object-position: 0 0; 
+        object-fit: cover;
+        object-position: 0 0;
     }
 
     .view--title-image-desktop h1 {
@@ -207,14 +206,14 @@
         color: #fff;
         font-size: 40px;
     }
-  
+
     .view--block {
         min-width: 385px;
     }
     .view--flex-info {
         font-size: 25px;
     }
- 
+
     .details-image--title {
         display: none;
     }
@@ -222,7 +221,7 @@
     .details-image--title--desktop {
         display: block;
         height: 228px;
-        background-color: #815C5A;
+        background-color: #815c5a;
         display: flex;
         justify-content: center;
         align-items: end;
@@ -232,9 +231,8 @@
         font-size: 80px;
     }
 
-
     .details--text-desc {
-      display: none;
+        display: none;
     }
 
     .details--text-p {
@@ -242,14 +240,14 @@
         max-width: 1500px;
         margin-top: 50px;
     }
-    
+
     .details--text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
+
     .details-button {
         padding: 40px;
         font-size: 20px;
@@ -260,4 +258,3 @@
         cursor: pointer;
     }
 }
-    
