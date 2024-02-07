@@ -12,5 +12,5 @@ export default defineConfig({
     }),
   ],
   assetsInclude: ["**/*.JPG"],
-  base: "/swapps-books/",
+  base: "https://regalk13.github.io/swapps-books/",
 })
