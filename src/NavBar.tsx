@@ -25,6 +25,7 @@ export default function NavBar() {
   const handleInputChange = (e) => {
     setSearchValue(e.target.value);
   };
+
   return (
     <>
       <div className="navbar">
