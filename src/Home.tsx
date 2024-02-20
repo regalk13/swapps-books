@@ -5,6 +5,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 import NavBar from "./NavBar.tsx";
 import BookBlock from "./BookBlock.tsx";
 
+
 // Functional component to display a message when no books are found
 function NoBooksMessage() {
   return (
